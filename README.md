@@ -50,11 +50,7 @@ Destructuración de argumentos:
 Se utiliza const [,, method, resource, ...params] = process.argv;
     para ignorar los dos primeros elementos por defecto de Node y capturar limpiamente las instrucciones del usuario.
 
-Router Pattern (Diccionario de rutas): 
-    En lugar de usar una larga cadena de if/else, las operaciones se mapean en un objeto routes. 
-    Esto hace que añadir nuevos métodos (como PUT o PATCH) o recursos (como users o carts) sea trivial y mantenga la función main limpia.
-
-    Validación Temprana: Se validan los parámetros requeridos para el método POST antes de realizar la llamada a la red, ahorrando recursos y proporcionando mensajes de error claros al usuario.
+Validación Temprana: Se validan los parámetros requeridos para el método POST antes de realizar la llamada a la red, ahorrando recursos y proporcionando mensajes de error claros al usuario.
 
     Manejo de fetch: Se implementó la validación de response.ok, ya que fetch no lanza excepciones por defecto ante códigos de estado HTTP de error (4xx, 5xx).
 
