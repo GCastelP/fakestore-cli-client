@@ -14,6 +14,16 @@ PRE ENTREGA: manejo de estructuras, APIS y lógica dinámica.
    Se utilizara process.argv para capturar los comandos, 
    fetch para las peticiones a FakeStore API, y 
    destructuring/spread para manipular la información.
+
+   Captura de los argumentos ingresados en la terminal
+       process.argv devuelve un array con los argumentos, donde los primeros dos elementos son el path del ejecutable de Node 
+       y el path del script, respectivamente. Contiene los argumentos pasados.
+       
+       los dos primeros elementos de process.argv son el path del ejecutable de Node y el path del script, respectivamente.
+       El resto de los elementos son los argumentos pasados por el usuario.
+ 
+       Se usará destructuring para extraer el método HTTP, el recurso y los parámetros adicionales de los comandos ingresados.   
+ 
   
   Con la base del proyecto lista, implementar las funcionalidades principales usando la API FakeStore. 
   El sistema debe ser capaz de interpretar comandos ingresados en la terminal y ejecutar las siguientes acciones:
