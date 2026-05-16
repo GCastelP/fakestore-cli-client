@@ -1,3 +1,34 @@
+PRE ENTREGA: manejo de estructuras, APIS y lógica dinámica.
+  
+  Objetivo: Crear una aplicación de terminal que permita a los usuarios interactuar con una tienda en línea utilizando comandos. La aplicación se comunicará con la FakeStore API para realizar operaciones como consultar productos, crear nuevos productos y eliminar productos existentes.
+  
+  Requerimientos del Proyecto 
+  
+  Requerimiento #1: Configuración Inicial
+   Crea un directorio donde alojarás tu proyecto e incluye un archivo index.js como punto de entrada.
+   Inicia Node.js y configura npm usando el comando npm init -y.
+   Agrega la propiedad "type": "module" en el archivo package.json para habilitar ESModules.
+   Configura un script llamado start para ejecutar el programa con el comando npm run start.
+   
+  Requerimiento #2: Lógica de Gestión de Productos
+   Se utilizara process.argv para capturar los comandos, 
+   fetch para las peticiones a FakeStore API, y 
+   destructuring/spread para manipular la información.
+  
+  Con la base del proyecto lista, implementar las funcionalidades principales usando la API FakeStore. 
+  El sistema debe ser capaz de interpretar comandos ingresados en la terminal y ejecutar las siguientes acciones:
+   a. Consultar Todos los Productos
+   b. Consultar un Producto Específico
+   c. Crear un Producto Nuevo
+   d. Eliminar un Producto
+
+ Como deberá ejecutarse este codigo en la terminal, se pueden usar comandos como:
+     npm run start -- GET products
+     npm run start -- GET products/1
+     npm run start -- POST products "Nuevo Producto" 19.99 "Categoría"
+     npm run start -- DELETE products/1   
+
+
 🛒 Fake Store API - CLI Client
 Un cliente de línea de comandos (CLI) construido con Node.js puro para interactuar con la Fake Store API. Permite consultar, crear y eliminar productos directamente desde la terminal.
 
