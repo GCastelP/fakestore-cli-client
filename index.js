@@ -13,7 +13,7 @@ const BASE_URL = 'https://fakestoreapi.com';
  * Captura de los argumentos ingresados en la terminal
  * - methodArg: El método HTTP (GET, POST, DELETE)
  * - resourceArg: El recurso al que se desea acceder (por ejemplo, "products" o "products/1")
- * - params: Parámetros adicionales necesarios para ciertas operaciones (como el título, precio y categoría para crear un producto)
+ * - params: Parámetros adicionales necesarios para ciertas operaciones (como el título, precio y categoría para crear un producto) 
  *       
  */
 
